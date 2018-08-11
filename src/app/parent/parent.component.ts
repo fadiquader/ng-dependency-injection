@@ -5,7 +5,7 @@ import { SimpleService } from '../services/simple.service';
   selector: 'app-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css'],
-  viewProviders: [SimpleService],
+  // viewProviders: [SimpleService],
   // providers: [SimpleService]
 })
 export class ParentComponent implements OnInit {
