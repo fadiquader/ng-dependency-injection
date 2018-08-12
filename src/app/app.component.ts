@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {LogService} from './services/log.service';
-import {SimpleService} from './services/simple.service';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +7,7 @@ import {SimpleService} from './services/simple.service';
 })
 export class AppComponent {
   title = 'app';
-  constructor(private simpleService: SimpleService, private logService: LogService) {
-    // Create an _injector_ and ask for it to resolve and create a LogService
-    // const injector: any = Injector.create([{provide: LogService, useClass: LogService}]);
-    // use the injector to **get the instance** of the LogService
-    // this.logService = injector.get(LogService);
+  constructor() {
+
   }
 }
